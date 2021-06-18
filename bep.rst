@@ -13,7 +13,7 @@ payments to other peers.
 Handshake
 =========
 
-As part of the LTEP handshake [#BEP-10]_, a peer can signal support for this extension
+As part of the LTEP handshake BEP-10_, a peer can signal support for this extension
 via message "tr_payments":
 
 .. parsed-literal::
@@ -39,7 +39,7 @@ The extension message requesting payment consists of the extension header and th
       bolt11: *Bolt-11 format text in utf-8 describing the amount and method of payment*
     }
 
-The invoice text form must be a [#Bolt #11]_ format invoice. Other formats for the invoice may be supported in future extensions, these would be identifiable by the key in the dictionary. The amount in the invoice must correspond to the price for a piece, i.e. the amount the requestee requires to be transferred before they are willing to send the data for a full piece to the requester. The price per piece, once communicated to a peer, must remain constant for that peer and torrent as long as the peers are connected. The price may vary between torrents and between peers. The price for the last piece must be the same as for other pieces, even if the piece has fewer bytes of data.
+The invoice text form must be a `Bolt-11`_ format invoice. Other formats for the invoice may be supported in future extensions, these would be identifiable by the key in the dictionary. The amount in the invoice must correspond to the price for a piece, i.e. the amount the requestee requires to be transferred before they are willing to send the data for a full piece to the requester. The price per piece, once communicated to a peer, must remain constant for that peer and torrent as long as the peers are connected. The price may vary between torrents and between peers. The price for the last piece must be the same as for other pieces, even if the piece has fewer bytes of data.
 
 Response to payment request
 ===========================
@@ -67,7 +67,7 @@ References
 ==========
 
 .. _`BEP-10`: http://www.bittorrent.org/beps/bep_0010.html
-.. _`Bolt #11`: https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md
+.. _`Bolt-11`: https://github.com/lightningnetwork/lightning-rfc/blob/master/11-payment-encoding.md
 
 
 Copyright
